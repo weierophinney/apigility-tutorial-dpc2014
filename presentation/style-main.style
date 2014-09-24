@@ -1,0 +1,411 @@
+embeddedFonts: []
+   [fonts/LiberationMono-Regular.ttf, fonts/LiberationMono-Bold.ttf, fonts/LiberationMono-Regular.ttf, fonts/LiberationMono-Bold.ttf]
+   # [fonts/HelveticaLight.ttf, fonts/HelveticaLight.ttf, fonts/HelveticaLightOblique.ttf, fonts/HelveticaLightOblique.ttf]
+  
+
+pageSetup:
+    size: null
+    width: 16cm
+    height: 12cm
+    margin-top: 0cm
+    margin-bottom: 0cm
+    margin-left: 0cm
+    margin-right: 0cm
+    margin-gutter: 0cm
+    spacing-header: 2mm
+    spacing-footer: 2mm
+    firstTemplate: coverPage
+
+
+# Frames: [ left position, bottom position, width, height ]
+
+pageTemplates:
+    coverPage:
+        frames: []
+            [5%, 5%, 90%, 70%]
+        showHeader: false
+        showFooter: false
+
+    titlePage:
+        frames: []
+            [5%, 5%, 90%, 65%]
+        // background: grid.png
+        showHeader: false
+        showFooter: false
+
+    narrowTitlePage:
+        frames: []
+            [15%, 5%, 73%, 65%]
+        // background: grid.png
+        showHeader: false
+        showFooter: false
+
+    summaryPage:
+        frames: []
+            [5%, 5%, 90%, 75%]
+        // background: grid.png
+        showHeader: false
+        showFooter: false
+
+    quotePage:
+        frames: []
+            [5%, 5%, 90%, 65%]
+        // background: grid.png
+        showHeader: false
+        showFooter: false
+
+    standardPage:
+        frames: []
+            [5%, 5%, 90%, 95%]
+        # background: grid.png
+        showHeader: false
+        showFooter: false
+        defaultFooter: ###Page### of ###Total###
+
+
+    twoColumnWithTitle:
+        frames: []
+            [5%, 5%, 90%, 95%]
+            [50%, 5%, 40%, 77%]
+        showHeader : false
+        showFooter : false
+
+    standardNoTitlePage:
+        frames: []
+            [5%, 5%, 90%, 80%]
+        showHeader: false
+        showFooter: false
+        
+    imagePage:
+        frames: []
+            [5%, 5%, 90%, 85%]
+        showHeader: false
+        showFooter: false
+
+fontsAlias:
+    titleFont:         Optima-Regular
+    headingFont:       Optima-Regular
+    stdMono:           LiberationMono-Regular
+    stdMonoItalic:     LiberationMono-Regular
+    stdMonoBold:       LiberationMono-Regular
+    stdMonoBoldItalic: LiberationMono-Regular
+
+
+
+#linkColor: #1b7b88
+linkColor: #000000
+
+styles:
+    normal:
+        fontSize: 16
+
+    bodytext:
+        alignment: TA_LEFT
+        hyphenation: false
+        spaceAfter: 10
+
+    footer:
+        fontSize: 8
+        alignment: TA_RIGHT
+
+    header:
+        alignment: TA_LEFT
+
+    heading:
+        textColor: #aa0000
+        fontName: headingFont
+        spaceAfter: 20
+        alignment: TA_LEFT
+
+    heading1:
+        fontName: headingFont
+        fontSize: 200%
+
+    heading2:
+        fontName: headingFont
+        fontSize: 135%
+        spaceAfter: 5
+
+    heading3:
+        fontName: headingFont
+        fontSize: 125%
+        textColor: #000000
+        spaceAfter: 5
+
+    title:
+        parent: heading
+        fontName: titleFont
+        fontSize: 225%
+        spaceAfter: 0
+        alignment: TA_CENTER
+
+    title2:
+        parent: heading
+        fontName: titleFont
+        fontSize: 225%
+        spaceBefore: 0
+        spaceAfter: 30
+        alignment: TA_CENTER
+
+    title3:
+        parent: title2
+        spaceAfter: 15
+
+    title4:
+        parent: title2
+        fontSize: 80%
+        spaceBefore: 15
+        spaceAfter: 30
+        textColor: #000000
+
+    title5:
+        parent: title2
+        fontSize: 80%
+        spaceBefore: 15
+        spaceAfter: 30
+
+    titleslideinfo:
+        parent: normal
+        alignment: TA_CENTER
+        spaceBefore: 40
+
+    imagetitleunder:
+        parent: title4
+        spaceBefore: 20
+        spaceAfter: 0
+        textColor: #aa0000
+
+    literal:
+        parent: normal
+        fontSize: 14
+        fontName: stdMono
+        firstLineIndent: 0
+        hyphenation: false
+        wordWrap: null
+        textColor: #000000
+
+    code:
+        parent: literal
+        leftIndent: 0
+        spaceBefore: 8
+        spaceAfter: 8
+        fontSize: 12
+        backColor: null
+        borderColor: null
+        borderWidth: 0
+        borderPadding: 0
+
+    blockquote:
+        parent: normal
+        spaceAfter: 10
+        fontName: stdItalic
+
+    attribution:
+        parent: normal
+        fontSize: 14
+        textColor: #000000
+        spaceAfter: 20
+
+    enumerated-list:
+        commands: []
+             [VALIGN, [ 0, 0 ], [ -1, -1 ], TOP ]
+             [RIGHTPADDING, [ 0, 0 ], [ 1, -1 ], 0 ]
+             [LEFTPADDING, [ 0, 0 ], [ 1, -1 ], 6 ]
+        colWidths: ["20", null]
+
+    bullet-list:
+        commands: []
+             [VALIGN, [ 0, 0 ], [ -1, -1 ], TOP ]
+             [RIGHTPADDING, [ 0, 0 ], [ 1, -1 ], 0 ]
+             [LEFTPADDING, [ 0, 0 ], [ 1, -1 ], 6 ]
+        colWidths: ["20", null]
+        spaceBefore: 0
+
+    definition:
+      parent: bodytext
+      firstLineIndent: 0
+      bulletIndent: 0
+      spaceBefore: 0
+      colWidths: [20pt,null]
+      commands: []
+                    [VALIGN, [ 0, 0 ], [ -1, -1 ], TOP ]
+                    [LEFTPADDING, [ 0, 0 ], [ -1, -1 ], 0 ]
+                    [BOTTOMPADDING, [ 0, 0 ], [ -1, -1 ], 0 ]
+                    [RIGHTPADDING, [ 0, 0 ], [ -1, -1 ], 0 ]
+
+    table:
+      spaceBefore:6
+      spaceAfter:0
+      alignment: TA_LEFT
+      commands: []
+             [VALIGN, [ 0, 0 ], [ -1, -1 ], TOP ]
+             [INNERGRID, [ 0, 0 ], [ 0, 0 ], 0.25, white ]
+             # [LINEBELOW, [ 0, 0 ], [ -1, 0 ], 0.5, gray ]
+             [ROWBACKGROUNDS, [0, 0], [-1, -1], [white,white]]
+             [BOX, [ 0, 0 ], [ -1, -1 ], 0.25, white ]
+
+    table-title:
+      parent:       heading4
+      keepWithNext: false
+      alignment:    TA_CENTER
+
+    table-heading:
+      parent:        heading
+      backColor:     white
+      alignment:     TA_LEFT
+      valign:        BOTTOM
+      borderPadding: 0
+
+
+    roballentable:
+        parent: table
+        colWidths: [8cm, 7cm]
+
+    item-list-item:
+        spaceAfter: 5
+
+    bullet-list-item:
+        spaceAfter: 5
+
+    white:
+        textColor: #FFFFFF
+    
+    centred:
+        alignment: TA_CENTER
+
+    centredtitle:
+        parent: heading1
+        alignment: TA_CENTER
+    
+    centredheading2:
+        parent: heading2
+        alignment: TA_CENTER
+    
+    centredsmallertitle:
+        parent: heading3
+        alignment: TA_CENTER
+
+    centredsubtitle:
+        parent: normal
+        alignment: TA_CENTER
+        fontSize: 110%
+
+    summarytitle:
+        parent: heading1
+        alignment: TA_CENTER
+
+    summarysubtitle:
+        parent: heading2
+        alignment: TA_CENTER
+
+
+    centredsubtitlewithvgap:
+        parent: centredsubtitle
+        spaceBefore: 40
+
+    summarybullets:
+        parent: bodytext
+        spaceBefore: 20
+
+
+    listattribution:
+        parent: attribution
+        spaceBefore: 80
+
+    nameatbottomofthanks:
+        parent: normal
+        fontSize: 14
+        textColor: #000000
+        alignment: TA_CENTER
+        spaceBefore: 90
+
+    line:
+        spaceBefore: 0
+        spaceAfter: 0
+
+    secondnameatbottomofthanks:
+        parent: normal
+        fontSize: 14
+        textColor: #000000
+        alignment: TA_CENTER
+        spaceBefore: 0
+
+    hackygap:
+        parent: normal
+        textColor: #FFFFFF
+        spaceBefore: 5
+
+    smaller:
+        parent: normal
+        fontSize: 12
+
+    centredsmaller:
+        parent: smaller
+        alignment: TA_CENTER
+
+    smallerwithgap:
+        parent: normal
+        fontSize: 12
+        spaceBefore: 80
+
+
+
+    newline:
+        parent: normal
+        spaceBefore: 0
+
+    verticalgap10:
+        parent: normal
+        spaceBefore: 10
+
+    verticalgap20:
+        parent: normal
+        spaceBefore: 20
+
+    verticalgap30:
+        parent: normal
+        spaceBefore: 30
+
+    verticalgap40:
+        parent: normal
+        spaceBefore: 40
+
+    verticalgap60:
+        parent: normal
+        spaceBefore: 60
+
+
+    h3withgap:
+        parent: heading3
+        spaceBefore: 40
+        alignment: TA_CENTER
+
+    centeredh1:
+        parent: heading1
+        alignment: TA_CENTER
+
+    centeredh2:
+        parent: heading2
+        alignment: TA_CENTER
+
+    centeredh3:
+        parent: heading3
+        alignment: TA_CENTER
+
+    centeredverticalgap40:
+        parent: normal
+        spaceBefore: 40
+        alignment: TA_CENTER
+
+
+    ratethis:
+        spaceBefore: 45
+        parent: normal
+        alignment: TA_RIGHT
+        fontSize: 80%
+
+    ratethis2:
+        spaceBefore: 0
+        parent: ratethis
+
+

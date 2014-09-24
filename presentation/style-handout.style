@@ -1,0 +1,17 @@
+pageSetup:
+    size: null
+    width: 16cm
+    height: 20cm
+    
+styles:
+    normal:
+        fontSize: 10
+
+    code:
+        fontSize: 8
+
+    handout:
+        parent: normal
+        spaceBefore: 10
+        fontSize: 12
+        textColor: blue
